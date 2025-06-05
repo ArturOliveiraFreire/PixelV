@@ -26,18 +26,18 @@
 }
 
 body {
-overflow-x: hidden;
-background-color: var(--Fundo-site)
+    overflow-x: hidden;
+    background-color: var(--Fundo-site)
 }
 
-.titulo{
+.titulo {
     display: flex;
-    font-family: "Recursive" , sans-linear-bold;
+    font-family: "Recursive", sans-linear-bold;
     font-size: 35px;
     font-weight: 600;
 }
 
-.titulo h2{
+.titulo h2 {
     color: var(--Branco);
     margin-bottom: 0px;
     background-color: var(--Roxo-PV);
@@ -45,7 +45,7 @@ background-color: var(--Fundo-site)
     padding: 10px 18px;
 }
 
-.titulo span{
+.titulo span {
     color: var(--Roxo-PV);
     border-bottom: solid 3px var(--verde-PV)
 }
@@ -124,13 +124,13 @@ header img {
     text-transform: uppercase;
     font-family: "Recursive", sans-linear;
     color: var(--verde-PV);
-    list-style-type:none;
+    list-style-type: none;
     padding: 0;
 }
 
 /* ------ SOBRE ------ */
 
-#sobre{
+#sobre {
     display: flex;
     align-items: center;
     gap: 80px;
@@ -138,19 +138,19 @@ header img {
     margin-bottom: 120px
 }
 
-#sobre img{
+#sobre img {
     max-width: 460px;
-    width: 40%;     
+    width: 40%;
     border-radius: 40px;
     box-shadow: 0. 10px, 10px, 0 rgba(0, 0, 0, 0.2);
 }
 
-#sobre h2{
+#sobre h2 {
     margin-right: 5px;
 }
 
-#sobre p{
-    font-family: "Recursive" , sans-linear;
+#sobre p {
+    font-family: "Recursive", sans-linear;
     font-size: 20px;
     text-align: justify;
     margin-top: 30px;
@@ -158,7 +158,7 @@ header img {
 
 /* ------ PARALLAX ------ */
 
-#parallax{
+#parallax {
     height: 250px;
     background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./Img/parallax.svg);
     margin-bottom: 120px;
@@ -168,20 +168,20 @@ header img {
 
 /* ------ SERVIÇOS ------ */
 
-#servicos{
+#servicos {
     margin-bottom: 120px;
 }
 
-#servicos .titulo{
+#servicos .titulo {
     justify-content: center;
     margin-bottom: 55px;
 }
 
-#servicos h2{
+#servicos h2 {
     margin-left: 5px;
 }
 
-.container-cards{
+.container-cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,16 +189,16 @@ header img {
     position: relative;
 }
 
-.linha-roxa{
+.linha-roxa {
     height: 250px;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0% , rgba(71, 0, 207, 1)100%);
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1)100%);
     position: absolute;
     z-index: -1;
     top: calc(50% - 125px);
 }
 
-#servicos .card{
+#servicos .card {
     width: 300px;
     margin: 20px;
     padding: 40px 20px;
@@ -213,7 +213,7 @@ header img {
     justify-content: center;
 }
 
-#servicos .card h3{
+#servicos .card h3 {
     font-size: 24px;
     margin: 5px 0 30px;
     color: var(--Roxo-PV);
@@ -221,37 +221,37 @@ header img {
     text-align: center;
 }
 
-#servicos .card p{
+#servicos .card p {
     font-family: "Recursive", Sans-linear;
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-#servicos .card svg{
+#servicos .card svg {
     color: var(--Roxo-PV);
     height: 75px;
 }
 
-#servicos .card:hover{
+#servicos .card:hover {
     border: solid 3px var(--verde-PV);
 }
 
-#servicos .card:hover svg{  
+#servicos .card:hover svg {
     fill: var(--verde-PV)
 }
 
-#servicos .card:hover h3{
+#servicos .card:hover h3 {
     color: var(--verde-PV);
 }
 
 /* ------ CASES ------ */
 
-#cases h2{
+#cases h2 {
     margin-right: 5px;
 }
 
-#cases{
+#cases {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,12 +259,128 @@ header img {
     margin-bottom: 120px;
 }
 
-#cases img{
+#cases img {
     height: 300px;
     border-radius: 40px;
 }
 
-#meuCarrossel{
+#meuCarrossel {
     max-width: 1170px;
     width: 90%;
+}
+
+/* ------ CCONTATO ------ */
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2 {
+    margin-left: 5px;
+}
+
+#contato form {
+    max-width: 980px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px var(--Roxo-PV);
+    border-radius: 40px;
+    background-color: var(--Contato);
+    color: var(--Preto);
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: var(--Preto);
+    background-color: var(--Branco);
+
+    border: none;
+    border-radius: 4px;
+    text-indent: 10px;
+    outline: none;
+}
+
+.campo-descricao textarea{
+    color: var(--Preto);
+    background-color: var(--Branco);
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label, .campo-descricao label{
+    margin-bottom: 15px;
+}
+
+.campo input, .campo-descricao textarea{
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo input::placeholder, .campo-descricao::placeholder{
+    color: #a0a0a0;
+}
+
+.campo input:focus, .campo-descricao textarea:focus{
+    outline: 2px solid var(--verde-PV)
+}
+
+#contato form button{
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--Roxo-PV);
+    color: var(--Branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-family: "Recursive" , san-linear;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover{
+    background-color: var(--verde-PV);
 }
