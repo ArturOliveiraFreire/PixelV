@@ -384,3 +384,53 @@ header img {
 #contato form button:hover{
     background-color: var(--verde-PV);
 }
+
+/* ------ FOOTER ------ */
+
+footer{
+    height: 250px;
+    background-image: url(./Img/footer.png);
+}
+
+footer img{
+    height: 90px;
+}
+
+footer .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais{
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p{
+    color: var(--Branco);
+
+    font-family: "Recursive", sans-linear;
+    font-size: 24px;
+}
+
+.icones-redes{
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a{
+    color: var(--Branco);
+}
+
+.icones-redes a:hover{
+    color: var(--verde-PV);
+}
